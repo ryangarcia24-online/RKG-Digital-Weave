@@ -9,7 +9,7 @@ body {
 
 /* The main container with the background image */
 .hero-image-container {
-    background: linear-gradient(rgba(10, 25, 47, 0.99), rgba(10, 25, 47, 0.99)), 
+    background: linear-gradient(rgba(10, 25, 47, 0.90), rgba(10, 25, 47, 0.90)), 
                 url('images/mythology-bg.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
