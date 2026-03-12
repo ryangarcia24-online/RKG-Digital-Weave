@@ -1,0 +1,113 @@
+/* Contact Form */
+
+
+
+
+.page-wrapper {
+    display: flex;
+    align-items: stretch;
+    max-width: 1200px;
+    width: 95%;
+}
+
+/* Decoration Persons */
+.person img {
+    height: 400px; /* Adjust based on your images */
+    display: block;
+}
+
+.left-person {
+    margin-right: -20px;
+    z-index: 2;
+    align-self: center;
+}
+
+.right-person {
+    margin-left: -20px;
+    z-index: 2;
+    align-self: center;
+}
+
+/* The Form Container */
+.form-container {
+    background: white;
+    padding: 40px;
+    flex-grow: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Checkbox Grid - 4 Columns */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+/* Layout for Inputs vs Textarea */
+.form-body {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+}
+
+    .input-columns input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+.gray-bg {
+    background-color: #9ca3af;
+    color: white;
+    border: none !important;
+}
+
+    .gray-bg::placeholder {
+        color: #eee;
+    }
+
+.message-area {
+    flex: 1;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background-color: #111827; /* Dark navy */
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
