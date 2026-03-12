@@ -1,0 +1,347 @@
+body {
+    background-image: url(../images/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* The main container with the background image */
+.hero-image-container {
+    background: linear-gradient(rgba(10, 25, 47, 0.90), rgba(10, 25, 47, 0.90)), 
+                url('images/mythology-bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 0, 220, 0.3); /* Subtle pink border to match your glow */
+    padding: 3rem;
+}
+
+
+
+/* Importing a "Futuristic" style font from Google Fonts */
+/* --- Global Futuristic Feel --- 
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #050505; 
+    color: #ffffff; /* Navy Blue 
+    letter-spacing: 0.5px;
+}
+
+/* --- Sci-Fi / AI Headings --- 
+h1, h2, h3, .navbar-brand, .btn-lg {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Wide tracking for a tech look 
+    font-weight: 700;
+}
+
+/* The Main Title with Cyber Glow 
+.display-4 {
+    font-weight: 900;
+    color: #fd991f;
+    text-shadow: 
+        0 0 10px rgba(255, 0, 220, 0.8),
+        0 0 20px rgba(255, 0, 220, 0.4);
+}
+
+/* --- Navigation HUD --- */
+.navbar {
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2); /* Thin cyan scan-line */
+}
+
+.nav-link {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: #00ffff !important; 
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff00dc !important;
+    text-shadow: 0 0 8px #ff00dc;
+}
+
+/* --- Body Text (Clean & Functional) --- */
+.lead {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Monospace feel for contact info/labels (Computer Data Look) */
+strong, .contact-info p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: #00ffff;
+    text-transform: uppercase;
+}
+
+/* --- Mythology Guide Titles --- */
+#Guide .lead {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ff00dc;
+}
+
+/* --- Futuristic Button --- */
+.btn-lg {
+    border: 2px solid #ff00dc;
+    background: transparent !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.btn-lg:hover {
+    background: #ff00dc !important;
+    box-shadow: 0 0 30px #ff00dc;
+    transform: translateY(-3px);
+}
+
+
+    .contact-info a {
+        color: cyan;
+        text-decoration: none; /* Optional: removes the underline */
+    }
+
+        .contact-info a:hover {
+            color: darkcyan; /* Optional: changes color when you hover over it */
+        }
+
+/*-------------------------------------------------------------------------------------------*/
+
+    #scrollTopBtn {
+    /* Layout & Positioning */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+    /* Futuristic Aesthetic */
+    background: rgba(10, 10, 15, 0.8); /* Dark void */
+    color: #00f2ff; /* Cyber blue */
+    border: 2px solid #00f2ff;
+    border-radius: 5px; /* Slight rounding for a "tech" feel */
+    clip-path: polygon(15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%, 0% 15%);
+    
+    /* Effects */
+    text-shadow: 0 0 8px #00f2ff;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3), inset 0 0 10px rgba(0, 242, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif; /* Recommended futuristic font */
+  }
+
+  /* Decorative line inside the button */
+  .btn-line {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00f2ff);
+    animation: scanning 2s linear infinite;
+  }
+
+  /* Hover State */
+  #scrollTopBtn:hover {
+    background: #00f2ff;
+    color: #0a0a0f;
+    box-shadow: 0 0 30px #00f2ff;
+    transform: translateY(-5px) scale(1.05);
+  }
+
+  /* Simple scanning animation */
+  @keyframes scanning {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  /* Active/Click State */
+  #scrollTopBtn:active {
+    transform: scale(0.9);
+    filter: hue-rotate(45deg); /* Shifts color to purple on click */
+  }
+
+  #scrollTopBtn {
+  position: fixed;
+  right: 20px;
+  /* Adjust 'bottom' to be higher than your navbar height */
+  bottom: 70px; 
+  z-index: 99;
+  /* Your other glitch/cyber styles here */
+}
+
+  /*-------------------------------------------------------------------------------------------*/
+
+    .responsive-iframe-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+    }
+
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    /* This removes the underline from ALL links */
+    a {
+        text-decoration: none;
+    }
+
+        /* Optional: Bring the underline back when someone hovers over it 
+        a:hover {
+            text-decoration: underline;
+        }*/
+
+
+video {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Soft neon glow */
+}
+
+/* Pulse Glow Effect */
+
+.pulse-glow {
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0px 4px 10px rgb(255, 0, 220); }
+    50% { box-shadow: 0px 4px 30px rgb(255, 0, 220), 0px 0px 15px rgba(255, 0, 220, 0.5); }
+    100% { box-shadow: 0px 4px 10px rgb(255, 0, 220); }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+    body {
+        background-color: #050505;
+        font-family: 'Rajdhani', sans-serif;
+        color: #e0e0e0;
+    }
+
+    h1, h2, h3, .display-4 {
+        font-family: 'Orbitron', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    }
+
+    /* Futuristic Cyber Button */
+    .btn-cyber {
+        font-family: 'Orbitron', sans-serif;
+        background: transparent;
+        color: #ff00dc;
+        border: 2px solid #ff00dc;
+        padding: 15px 40px;
+        position: relative;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        font-weight: bold;
+    }
+
+    .btn-cyber:hover {
+        background: #ff00dc;
+        color: white;
+        box-shadow: 0 0 20px #ff00dc, 0 0 40px #ff00dc;
+        transform: skew(-5deg);
+    }
+
+    /* Neon Pulse Glow for Video/Images */
+    .pulse-glow {
+        border: 2px solid #00f2ff !important;
+        box-shadow: 0 0 15px #00f2ff, inset 0 0 15px #00f2ff !important;
+    }
+
+    /* Details styling (Glassmorphism) */
+    details {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    summary {
+        font-family: 'Orbitron', sans-serif;
+        color: #00f2ff !important;
+        font-size: 0.7rem !important;
+    }
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+/* Futuristic Styling */
+    .custom-cyber-nav {
+        background: rgba(0, 0, 0, 0.6) !important;
+        backdrop-filter: blur(12px); /* Glassmorphism */
+        border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        padding: 0.8rem 1.5rem;
+    }
+
+    .brand-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: #00ffff;
+        text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+    }
+
+    .logo-container {
+        border: 1px solid #00ffff;
+        padding: 2px;
+        display: flex;
+        clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0% 30%);
+    }
+
+    .nav-link {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .nav-link:hover, .nav-link.active {
+        color: #00ffff !important;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        transform: translateY(-1px);
+    }
+
+    /* Animated Underline Effect */
+    .nav-item .nav-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #00ffff;
+        transition: width .3s;
+    }
+
+    .nav-item .nav-link:hover::after {
+        width: 100%;
+    }
+
+
+
+
+
