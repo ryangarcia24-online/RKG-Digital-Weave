@@ -21,23 +21,23 @@ body {
 
 
 /* Importing a "Futuristic" style font from Google Fonts */
-/* --- Global Futuristic Feel --- */
+/* --- Global Futuristic Feel --- 
 body {
     font-family: 'Exo 2', sans-serif;
     background-color: #050505; 
-    color: #ffffff; /* Navy Blue */
+    color: #ffffff; /* Navy Blue 
     letter-spacing: 0.5px;
 }
 
-/* --- Sci-Fi / AI Headings --- */
+/* --- Sci-Fi / AI Headings --- 
 h1, h2, h3, .navbar-brand, .btn-lg {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px; /* Wide tracking for a tech look */
+    letter-spacing: 4px; /* Wide tracking for a tech look 
     font-weight: 700;
 }
 
-/* The Main Title with Cyber Glow */
+/* The Main Title with Cyber Glow 
 .display-4 {
     font-weight: 900;
     color: #fd991f;
