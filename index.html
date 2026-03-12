@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,600;1,400&family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/hover.css" rel="stylesheet" />
     <link rel="icon" href="images/logo.jpg" sizes="any">
@@ -27,80 +28,59 @@
 
 
 
-    <!-- Example: Brand/Logo + Navbar Text -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" 
-     style="background-color: rgba(0, 0, 0, 0.7) !important;">
-   
-            <!-- Brand / Logo -->
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#Home">
-    <img src="images/logo.jpg"
-         alt="Logo"
-         width="32"
-         height="32"
-         class="rounded" />
-    <span class="nav-link">
-        Digital Weave
-    </span>
-</a>
-
-            <!-- Toggler (for small screens) -->
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <!-- Left links -->
-                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Guide">Guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top custom-cyber-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#Home">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Logo" width="32" height="32" class="rounded-0" />
             </div>
+            <span class="brand-text">DIGITAL WEAVE</span>
+        </a>
 
-    </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">// HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Guide">// GUIDE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">// CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 
     <!-- Home -->
 
-    <section id="Home" class="text-white py-5 mt-5">
+  <section id="Home" class="text-white py-5 mt-5">
     <div class="container text-center">
-        <!--<div class="hero-image-container text-center">-->
-            
-<div class="row g-0 align-items-center justify-content-center">
-  <video autoplay muted loop playsinline style="width: 1000px; height: auto; object-fit: cover; display: block; border: 6px solid white; border-radius: 20px; box-shadow: 0px 4px 20px rgb(255, 0, 220);" class= "pulse-glow">
-    <source src="videos/glyph_waves_remix.mp4" type="video/mp4">
-  </video>
-</div>
-</div>
+        <div class="row g-0 align-items-center justify-content-center">
+            <video autoplay muted loop playsinline 
+                   style="width: 1000px; max-width: 100%; height: auto; object-fit: cover; display: block; border-radius: 0px;" 
+                   class="pulse-glow">
+                <source src="videos/glyph_waves_remix.mp4" type="video/mp4">
+            </video>
+        </div>
 
-            <h1 class="display-4 fw-bold text-center mt-5">Welcome to <br>RKG's Digital Weave</h1>
-            
-            <p class="lead mt-3 text-center container">
-                Digital Weave represents the intricate and interconnected nature of computers, networks, and the internet. The phrase "connecting the threads" further emphasizes how these three elements are woven together to form the fabric of our modern digital world.
-            </p>
+        <h1 class="display-4 fw-bold text-center mt-5">Welcome to <br><span style="color: #ff00dc;">RKG's Digital Weave</span></h1>
 
-            <div class="mt-4 text-center">
-                <a href="https://www.facebook.com/rkgsdigitalweave/" class="btn btn-lg px-5 fw-bold" 
-                   class="btn btn-lg px-5 fw-bold transition-all duration-300 hover:scale-105"
-   style="background-color: #ff00dc; color: white; border-radius: 50px; box-shadow: 0 0 15px rgba(255, 0, 220, 0.6);"
-   onmouseover="this.style.boxShadow='0 0 30px rgba(255, 0, 220, 1)'"
-   onmouseout="this.style.boxShadow='0 0 15px rgba(255, 0, 220, 0.6)'">
-   FOLLOW ON FACEBOOK
-                </a>
-            </div>
+        <p class="lead mt-3 text-center container" style="max-width: 800px; opacity: 0.8;">
+            Digital Weave represents the intricate and interconnected nature of computers, networks, and the internet. 
+            The phrase <span style="color: #00f2ff;">"connecting the threads"</span> emphasizes how these elements form the fabric of our modern digital world.
+        </p>
 
+        <div class="mt-4 text-center">
+            <a href="https://www.facebook.com/rkgsdigitalweave/" class="btn btn-cyber">
+                FOLLOW ON FACEBOOK
+            </a>
         </div>
     </div>
 </section>
@@ -110,34 +90,30 @@
     <!-- AI Prompt Gallery -->
 
     <section id="Guide" class="text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-5" style="border-bottom: 2px solid #ff00dc; display: inline-block; padding-bottom: 10px;">
+            DIGITAL GUIDE
+        </h1>
 
-        <div class="container text-center">
-            <!--<div class="hero-image-container text-center">-->
-            
-                <h1 class="display-4 fw-bold">DIGITAL GUIDE</h1>
-
-               
-    <div class="row">
+        <div class="row">
 
     <!------------------------------------>
 
-    <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/1.jpg', 'What is a Computer?')">
-        <img src="images/1.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="What is a Computer?">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'What is a Computer?'</p>
-    </div>
+   <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/1.jpg', 'What is a Computer?')">
+                    <img src="images/1.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="What is a Computer?">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[ WHAT IS A COMPUTER? ]</p>
+                </div>
   
 
     <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+                    <summary>ACCESS_DATABASE_DETAILS</summary>
+                    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+    
     This infographic provides a clear and accessible introduction to the concept of computing. It defines a computer simply as an electronic device that manipulates information or data, emphasizing its role in processing digital content.
     <br>
     To illustrate this definition, the graphic showcases three primary forms of modern hardware:
@@ -163,22 +139,21 @@
     <!------------------------------------>
 
 
-    <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/2.jpg', '𝗧𝗵𝗲 𝗩𝗼𝗻 𝗡𝗲𝘂𝗺𝗮𝗻𝗻 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲')">
-        <img src="images/2.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'𝗧𝗵𝗲 𝗩𝗼𝗻 𝗡𝗲𝘂𝗺𝗮𝗻𝗻 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗧𝗵𝗲 𝗩𝗼𝗻 𝗡𝗲𝘂𝗺𝗮𝗻𝗻 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲'</p>
-    </div>
+     <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/2.jpg', '𝗧𝗵𝗲 𝗩𝗼𝗻 𝗡𝗲𝘂𝗺𝗮𝗻𝗻 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲')">
+                    <img src="images/2.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗧𝗵𝗲 𝗩𝗼𝗻 𝗡𝗲𝘂𝗺𝗮𝗻𝗻 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[THE VON NEUMANN 𝗔RCHITECTURE]</p>
+                </div>
 
     <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+    
     Understanding the Von Neumann Architecture<br>
     Key Components: CPU, Memory, I/O<br>
     The Von Neumann Architecture is the foundational design for modern computers. It proposes a structure where both program instructions and data are stored in the same memory space.<br>
@@ -203,21 +178,19 @@
     <!------------------------------------>
 
     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/3.jpg', '𝗔 𝗯𝗿𝗶𝗲𝗳 𝗵𝗶𝘀𝘁𝗼𝗿𝘆 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴')">
-        <img src="images/3.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'𝗔 𝗯𝗿𝗶𝗲𝗳 𝗵𝗶𝘀𝘁𝗼𝗿𝘆 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗔 𝗯𝗿𝗶𝗲𝗳 𝗵𝗶𝘀𝘁𝗼𝗿𝘆 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴'</p>
-    </div>
+                <div style="cursor: pointer;" onclick="openPreview('images/3.jpg', '𝗔 𝗯𝗿𝗶𝗲𝗳 𝗵𝗶𝘀𝘁𝗼𝗿𝘆 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴')">
+                    <img src="images/3.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗔 𝗯𝗿𝗶𝗲𝗳 𝗵𝗶𝘀𝘁𝗼𝗿𝘆 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[A BRIEF HISTORY OF COMPUTING]</p>
+                </div>
 
-     <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
     This infographic, titled "1 Brief History Computing (From the Ababaus to the Modern PC)," provides a visual timeline of the evolution of calculation and data processing. It tracks the journey from ancient manual tools to the sophisticated digital workstations we use today.
     <br>
     Key Observations<br>
@@ -239,22 +212,21 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/4.jpg', '𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿𝘀')">
-        <img src="images/4.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿𝘀'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿𝘀'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/4.jpg', '𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿𝘀')">
+                    <img src="images/4.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿𝘀">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[TYPES OF COMPUTERS]</p>
+                </div>
 
-    <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+     <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+    
     This image is a simple infographic titled "Types Computers" that categorizes computer hardware into four main levels of scale and power.
     <br>
     Computer Categories:<br>
@@ -283,22 +255,21 @@
     <!------------------------------------>
 
     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/5.jpg', 'The Central Processing Unit')">
-        <img src="images/5.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'The Central Processing Unit'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'The Central Processing Unit'</p>
-    </div>
+                <div style="cursor: pointer;" onclick="openPreview('images/5.jpg', 'The Central Processing Unit')">
+                    <img src="images/5.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="The Central Processing Unit">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[THE CENTRAL PROCESSING UNIT]</p>
+                </div>
 
 
      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+    
     This image is an educational graphic that explains the role of a Central Processing Unit (CPU).
     <br>
     It uses a simple, flat-design illustration of a processor chip and defines it as the "brain" of the computer. In short, the CPU is the primary component responsible for interpreting and executing most of the commands from the computer's hardware and software.
@@ -317,22 +288,22 @@
 
     <!------------------------------------>
 
-       <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/6.jpg', 'Memory')">
-        <img src="images/6.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'Memory'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'Memory'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/6.jpg', 'Memory')">
+                    <img src="images/6.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="Memory">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[MEMORY]</p>
+                </div>
 
-     <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+      <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+    
+    
     This infographic highlights the core differences between RAM (Random Access Memory) and ROM (Read-Only Memory).
     <br>
     RAM acts as a computer's temporary, high-speed workspace that stores active data and instructions, but it is "volatile," meaning everything is erased the moment the power is turned off.
@@ -353,22 +324,22 @@
 
      <!------------------------------------>
 
-        <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/7.jpg', '𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗗𝗲𝘃𝗶𝗰𝗲𝘀')">
-        <img src="images/7.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗗𝗲𝘃𝗶𝗰𝗲𝘀'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗗𝗲𝘃𝗶𝗰𝗲𝘀'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/7.jpg', '𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗗𝗲𝘃𝗶𝗰𝗲𝘀')">
+                    <img src="images/7.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗗𝗲𝘃𝗶𝗰𝗲𝘀">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[STORAGE DEVICES]</p>
+                </div>
 
     <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This image is a simplified educational infographic highlighting three common types of computer storage devices:
     <br>
     Hard Disk Drive (HDD): Uses mechanical spinning platters and a moving head to read/write data; known for high capacity at a lower cost.
@@ -392,22 +363,22 @@
 
      <!------------------------------------>
 
-         <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/8.jpg', '𝗜𝗻𝗽𝘂𝘁/𝗢𝘂𝘁𝗽𝘂𝘁 𝗗𝗲𝘃𝗶𝗰𝗲𝘀 (𝗜/𝗢)')">
-        <img src="images/8.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="'𝗜𝗻𝗽𝘂𝘁/𝗢𝘂𝘁𝗽𝘂𝘁 𝗗𝗲𝘃𝗶𝗰𝗲𝘀 (𝗜/𝗢)'">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗜𝗻𝗽𝘂𝘁/𝗢𝘂𝘁𝗽𝘂𝘁 𝗗𝗲𝘃𝗶𝗰𝗲𝘀 (𝗜/𝗢)'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/8.jpg', '𝗜𝗻𝗽𝘂𝘁/𝗢𝘂𝘁𝗽𝘂𝘁 𝗗𝗲𝘃𝗶𝗰𝗲𝘀 (𝗜/𝗢)')">
+                    <img src="images/8.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗜𝗻𝗽𝘂𝘁/𝗢𝘂𝘁𝗽𝘂𝘁 𝗗𝗲𝘃𝗶𝗰𝗲𝘀 (𝗜/𝗢)">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[INPUT/OUTPUT DEVICES (I/O)]</p>
+                </div>
 
     <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This image is an educational infographic about Input/Output (I/O) Devices, which are the physical hardware tools used to communicate with a computer.
     <br>
     It breaks them down into two categories:
@@ -430,22 +401,21 @@
 
      <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/9.jpg', '𝗧𝗵𝗲 𝗠𝗼𝘁𝗵𝗲𝗿𝗯𝗼𝗮𝗿𝗱 𝗮𝗻𝗱 𝗼𝘁𝗵𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀')">
-        <img src="images/9.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗧𝗵𝗲 𝗠𝗼𝘁𝗵𝗲𝗿𝗯𝗼𝗮𝗿𝗱 𝗮𝗻𝗱 𝗼𝘁𝗵𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗧𝗵𝗲 𝗠𝗼𝘁𝗵𝗲𝗿𝗯𝗼𝗮𝗿𝗱 𝗮𝗻𝗱 𝗼𝘁𝗵𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/9.jpg', '𝗧𝗵𝗲 𝗠𝗼𝘁𝗵𝗲𝗿𝗯𝗼𝗮𝗿𝗱 𝗮𝗻𝗱 𝗼𝘁𝗵𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀')">
+                    <img src="images/9.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗧𝗵𝗲 𝗠𝗼𝘁𝗵𝗲𝗿𝗯𝗼𝗮𝗿𝗱 𝗮𝗻𝗱 𝗼𝘁𝗵𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[THE MOTHERBOARD AND OTHER INTERNAL COMPONENTS]</p>
+                </div>
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+       <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
     This image is an educational infographic titled "The Motherboard: The Central Hub of Your Computer." It uses a clean, categorized layout to explain the role of a motherboard in four main sections:
     <br>
     What It Is: Defines it as the main printed circuit board (PCB) that connects all parts of a computer.
@@ -472,22 +442,21 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/10.jpg', 'What is a Software?')">
-        <img src="images/10.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="What is a Software?">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'What is a Software?'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/10.jpg', 'What is a Software?')">
+                    <img src="images/10.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="What is a Software?">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[WHAT IS A SOFTWARE?]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
     This image is an educational infographic that defines software as the "brain" of a computer and breaks it down into two main categories:
     <br>
     System Software: The foundational layer that manages hardware and runs the computer (e.g., Windows, macOS, and drivers).
@@ -511,22 +480,21 @@
      <!------------------------------------>
 
        <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/11.jpg', 'Introduction to Operating Systems')">
-        <img src="images/11.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="Introduction to Operating Systems">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'Introduction to Operating Systems'</p>
-    </div>
+                <div style="cursor: pointer;" onclick="openPreview('images/11.jpg', 'Introduction to Operating Systems')">
+                    <img src="images/11.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="Introduction to Operating Systems">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[INTRODUCTION TO OPERATING SYSTEMS]</p>
+                </div>
 
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+     <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
     This infographic provides a high-level overview of Operating Systems (OS), framing them as the essential "foundation" of computing.
     <br>
     It breaks the concept down into three main areas:
@@ -551,22 +519,21 @@
 
     <!------------------------------------>
 
-         <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/12.jpg', 'Common Operating Systems')">
-        <img src="images/12.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="Common Operating Systems">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'Common Operating Systems'</p>
-    </div>
+    <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/12.jpg', 'Common Operating Systems')">
+                    <img src="images/12.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="Common Operating Systems">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[COMMON OPERATING SYSTEMS]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
     This image is a comparison chart of the five most Common Operating Systems (OS) used today, categorized by their primary devices and key strengths.
     <br>
     The Breakdown<br>
@@ -594,22 +561,22 @@
 
     <!------------------------------------>
 
-        <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/13.jpg', '𝗧𝗵𝗲 𝗨𝘀𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲 (𝗨𝗜)')">
-        <img src="images/13.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗧𝗵𝗲 𝗨𝘀𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲 (𝗨𝗜)">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗧𝗵𝗲 𝗨𝘀𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲 (𝗨𝗜)'</p>
-    </div>
+       <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/13.jpg', '𝗧𝗵𝗲 𝗨𝘀𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲 (𝗨𝗜)')">
+                    <img src="images/13.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗧𝗵𝗲 𝗨𝘀𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲 (𝗨𝗜)">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[THE USER INTERFACE (UI)]</p>
+                </div>
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+       <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
    This infographic provides a high-level overview of a User Interface (UI) and how it helps users navigate an Operating System (OS). It breaks down the interface into four main pillars:
    <br> 
    Visual Elements: The "look" of the UI, including icons, windows, and widgets.
@@ -636,22 +603,22 @@
 
      <!------------------------------------>
 
-           <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/14.jpg', '𝗙𝗶𝗹𝗲 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗮𝗻𝗱 𝗳𝗶𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁')">
-        <img src="images/14.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗙𝗶𝗹𝗲 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗮𝗻𝗱 𝗳𝗶𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗙𝗶𝗹𝗲 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗮𝗻𝗱 𝗳𝗶𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁'</p>
-    </div>
+            <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/14.jpg', '𝗙𝗶𝗹𝗲 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗮𝗻𝗱 𝗳𝗶𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁')">
+                    <img src="images/14.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗙𝗶𝗹𝗲 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗮𝗻𝗱 𝗳𝗶𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[FILE SYSTEMS AND FILE MANAGEMENT]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic illustrates the fundamentals of File Management, showing how data is organized and handled on a computer.
     <br>
     Core Components<br>
@@ -676,21 +643,21 @@
      <!------------------------------------>
 
     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/15.jpg', 'Introduction to Computer Networks')">
-        <img src="images/15.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="Introduction to Computer Networks">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'Introduction to Computer Networks'</p>
-    </div>
+                <div style="cursor: pointer;" onclick="openPreview('images/15.jpg', 'Introduction to Computer Networks')">
+                    <img src="images/15.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="Introduction to Computer Networks">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[INTRODUCTION TO COMPUTER NETWORKS]</p>
+                </div>
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+       <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic provides a high-level comparison between the two primary types of computer networks:
     <br>
     LAN (Local Area Network): A private, high-speed network confined to a small area like a home or office. It connects devices like computers and printers directly.
@@ -713,22 +680,22 @@
 
      <!------------------------------------>
 
-       <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/16.jpg', '𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀')">
-        <img src="images/16.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀'</p>
-    </div>
+        <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/16.jpg', '𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀')">
+                    <img src="images/16.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[NETWORK COMPONENTS]</p>
+                </div>
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+     <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic provides a high-level overview of the three fundamental building blocks of a computer network:
     <br>
     Routers: The "traffic controllers" that connect different networks, such as linking your home devices to the internet.
@@ -753,22 +720,22 @@
 
     <!------------------------------------>
 
-         <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/17.jpg', '𝗧𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁')">
-        <img src="images/17.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗧𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗧𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/17.jpg', '𝗧𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁')">
+                    <img src="images/17.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗧𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[THE INTERNET]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic provides a high-level overview of what the internet is and how data travels between devices.
     <br>
     Key Takeaways<br>
@@ -793,21 +760,21 @@
      <!------------------------------------>
 
       <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/18.jpg', '𝗧𝗵𝗲 𝗪𝗼𝗿𝗹𝗱 𝗪𝗶𝗱𝗲 𝗪𝗲𝗯 𝘃𝘀. 𝘁𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁')">
-        <img src="images/18.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗧𝗵𝗲 𝗪𝗼𝗿𝗹𝗱 𝗪𝗶𝗱𝗲 𝗪𝗲𝗯 𝘃𝘀. 𝘁𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗧𝗵𝗲 𝗪𝗼𝗿𝗹𝗱 𝗪𝗶𝗱𝗲 𝗪𝗲𝗯 𝘃𝘀. 𝘁𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁'</p>
-    </div>
+                <div style="cursor: pointer;" onclick="openPreview('images/18.jpg', '𝗧𝗵𝗲 𝗪𝗼𝗿𝗹𝗱 𝗪𝗶𝗱𝗲 𝗪𝗲𝗯 𝘃𝘀. 𝘁𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁')">
+                    <img src="images/18.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗧𝗵𝗲 𝗪𝗼𝗿𝗹𝗱 𝗪𝗶𝗱𝗲 𝗪𝗲𝗯 𝘃𝘀. 𝘁𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[THE WORLD WIDE WEB VS. THE INTERNET]</p>
+                </div>
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+     <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic explains the fundamental difference between the Internet and the World Wide Web, which are often (incorrectly) used interchangeably.
     <br>
     Key Distinctions<br>
@@ -832,22 +799,22 @@
 
     <!------------------------------------>
 
-      <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/19.jpg', '𝗧𝗪𝗲𝗯 𝗯𝗿𝗼𝘄𝘀𝗲𝗿𝘀, 𝗨𝗥𝗟𝘀, 𝗮𝗻𝗱 𝘀𝗲𝗮𝗿𝗰𝗵 𝗲𝗻𝗴𝗶𝗻𝗲𝘀')">
-        <img src="images/19.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗪𝗲𝗯 𝗯𝗿𝗼𝘄𝘀𝗲𝗿𝘀, 𝗨𝗥𝗟𝘀, 𝗮𝗻𝗱 𝘀𝗲𝗮𝗿𝗰𝗵 𝗲𝗻𝗴𝗶𝗻𝗲𝘀">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗪𝗲𝗯 𝗯𝗿𝗼𝘄𝘀𝗲𝗿𝘀, 𝗨𝗥𝗟𝘀, 𝗮𝗻𝗱 𝘀𝗲𝗮𝗿𝗰𝗵 𝗲𝗻𝗴𝗶𝗻𝗲𝘀'</p>
-    </div>
+     <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/19.jpg', '𝗪𝗲𝗯 𝗯𝗿𝗼𝘄𝘀𝗲𝗿𝘀, 𝗨𝗥𝗟𝘀, 𝗮𝗻𝗱 𝘀𝗲𝗮𝗿𝗰𝗵 𝗲𝗻𝗴𝗶𝗻𝗲𝘀')">
+                    <img src="images/19.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗪𝗲𝗯 𝗯𝗿𝗼𝘄𝘀𝗲𝗿𝘀, 𝗨𝗥𝗟𝘀, 𝗮𝗻𝗱 𝘀𝗲𝗮𝗿𝗰𝗵 𝗲𝗻𝗴𝗶𝗻𝗲𝘀">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[WEB RROWSERS, URLs, AND SEARCH ENGINES]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     Based on the infographic, here is a quick breakdown of how we navigate the internet:
     <br>
     1. Web Browsers<br>
@@ -884,22 +851,22 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/20.jpg', '𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗿𝗶𝘃𝗮𝗰𝘆 𝗮𝗻𝗱 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻')">
-        <img src="images/20.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗿𝗶𝘃𝗮𝗰𝘆 𝗮𝗻𝗱 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗿𝗶𝘃𝗮𝗰𝘆 𝗮𝗻𝗱 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻'</p>
-    </div>
+      <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/20.jpg', '𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗿𝗶𝘃𝗮𝗰𝘆 𝗮𝗻𝗱 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻')">
+                    <img src="images/20.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗿𝗶𝘃𝗮𝗰𝘆 𝗮𝗻𝗱 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[ONLINE PRIVACY AND PERSONAL INFORMATION]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic by Data Guardian provides a quick guide to Online Privacy and Data Protection. It breaks down into three main categories:
     <br>
     Definition: It explains privacy as the protection of your digital identity and controlling who has access to your information (like your name, location, and browsing history).
@@ -922,22 +889,22 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/21.jpg', '𝗖𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆: 𝗩𝗶𝗿𝘂𝘀𝗲𝘀, 𝗺𝗮𝗹𝘄𝗮𝗿𝗲, 𝗮𝗻𝗱 𝗽𝗵𝗶𝘀𝗵𝗶𝗻𝗴')">
-        <img src="images/21.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗖𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆: 𝗩𝗶𝗿𝘂𝘀𝗲𝘀, 𝗺𝗮𝗹𝘄𝗮𝗿𝗲, 𝗮𝗻𝗱 𝗽𝗵𝗶𝘀𝗵𝗶𝗻𝗴">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗖𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆: 𝗩𝗶𝗿𝘂𝘀𝗲𝘀, 𝗺𝗮𝗹𝘄𝗮𝗿𝗲, 𝗮𝗻𝗱 𝗽𝗵𝗶𝘀𝗵𝗶𝗻𝗴'</p>
-    </div>
+       <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/21.jpg', '𝗖𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆: 𝗩𝗶𝗿𝘂𝘀𝗲𝘀, 𝗺𝗮𝗹𝘄𝗮𝗿𝗲, 𝗮𝗻𝗱 𝗽𝗵𝗶𝘀𝗵𝗶𝗻𝗴'')">
+                    <img src="images/21.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗖𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆: 𝗩𝗶𝗿𝘂𝘀𝗲𝘀, 𝗺𝗮𝗹𝘄𝗮𝗿𝗲, 𝗮𝗻𝗱 𝗽𝗵𝗶𝘀𝗵𝗶𝗻𝗴'">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[CYBERSECURITY: VIRUSES, MALWARE, AND PHISHING']</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic provides a high-level overview of three common cybersecurity threats:
     <br>
     Viruses: Malicious code that attaches to files and spreads, causing system crashes and file corruption.
@@ -962,22 +929,22 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/22.jpg', '𝗕𝗲𝘀𝘁 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗲𝘀 𝗳𝗼𝗿 𝘀𝘁𝗿𝗼𝗻𝗴 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀')">
-        <img src="images/22.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗕𝗲𝘀𝘁 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗲𝘀 𝗳𝗼𝗿 𝘀𝘁𝗿𝗼𝗻𝗴 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗕𝗲𝘀𝘁 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗲𝘀 𝗳𝗼𝗿 𝘀𝘁𝗿𝗼𝗻𝗴 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀'</p>
-    </div>
+    <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/22.jpg', '𝗕𝗲𝘀𝘁 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗲𝘀 𝗳𝗼𝗿 𝘀𝘁𝗿𝗼𝗻𝗴 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀')">
+                    <img src="images/22.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗕𝗲𝘀𝘁 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗲𝘀 𝗳𝗼𝗿 𝘀𝘁𝗿𝗼𝗻𝗴 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[BEST PRACTICES FOR STRONG PASSWORDS]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic outlines six best practices for creating and maintaining strong passwords to enhance online security:
     <br>
     Complexity: Use a mix of uppercase/lowercase letters, numbers, and symbols.
@@ -1004,22 +971,22 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/23.jpg', '𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗶𝘁𝗶𝘇𝗲𝗻𝘀𝗵𝗶𝗽 𝗮𝗻𝗱 𝗼𝗻𝗹𝗶𝗻𝗲 𝗲𝘁𝗶𝗾𝘂𝗲𝘁𝘁𝗲')">
-        <img src="images/23.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗶𝘁𝗶𝘇𝗲𝗻𝘀𝗵𝗶𝗽 𝗮𝗻𝗱 𝗼𝗻𝗹𝗶𝗻𝗲 𝗲𝘁𝗶𝗾𝘂𝗲𝘁𝘁𝗲">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗶𝘁𝗶𝘇𝗲𝗻𝘀𝗵𝗶𝗽 𝗮𝗻𝗱 𝗼𝗻𝗹𝗶𝗻𝗲 𝗲𝘁𝗶𝗾𝘂𝗲𝘁𝘁𝗲'</p>
-    </div>
+    <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/23.jpg', '𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗶𝘁𝗶𝘇𝗲𝗻𝘀𝗵𝗶𝗽 𝗮𝗻𝗱 𝗼𝗻𝗹𝗶𝗻𝗲 𝗲𝘁𝗶𝗾𝘂𝗲𝘁𝘁𝗲')">
+                    <img src="images/23.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗶𝘁𝗶𝘇𝗲𝗻𝘀𝗵𝗶𝗽 𝗮𝗻𝗱 𝗼𝗻𝗹𝗶𝗻𝗲 𝗲𝘁𝗶𝗾𝘂𝗲𝘁𝘁𝗲">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[DIGITAL CITIZENSHIP AND ONLINE ETIQUETTE]</p>
+                </div>
 
-      <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+     <details>
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
     This infographic serves as a guide for navigating the internet responsibly. It is divided into two main categories:
     <br>
     1. Digital Citizenship<br>
@@ -1060,22 +1027,22 @@
 
     <!------------------------------------>
 
-     <div class="col-md-4 text-center mt-5 image-container">
-    <div style="cursor: pointer;" onclick="openPreview('images/24.jpg', '𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗱𝗮𝘁𝗮 𝗯𝗮𝗰𝗸𝘂𝗽 𝗮𝗻𝗱 𝗿𝗲𝗰𝗼𝘃𝗲𝗿𝘆')">
-        <img src="images/24.jpg" 
-             class="img-fluid premium-hover" 
-             width="400" 
-             style="border: 8px solid white; border-radius: 20px; box-shadow: 0px 4px 10px rgb(255, 0, 220);" 
-             alt="𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗱𝗮𝘁𝗮 𝗯𝗮𝗰𝗸𝘂𝗽 𝗮𝗻𝗱 𝗿𝗲𝗰𝗼𝘃𝗲𝗿𝘆">
-        <p class="lead mt-3" style="color: cyan; transition: 0.3s;">'𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗱𝗮𝘁𝗮 𝗯𝗮𝗰𝗸𝘂𝗽 𝗮𝗻𝗱 𝗿𝗲𝗰𝗼𝘃𝗲𝗿𝘆'</p>
-    </div>
+    <div class="col-md-4 text-center mt-5 image-container">
+                <div style="cursor: pointer;" onclick="openPreview('images/24.jpg', '𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗱𝗮𝘁𝗮 𝗯𝗮𝗰𝗸𝘂𝗽 𝗮𝗻𝗱 𝗿𝗲𝗰𝗼𝘃𝗲𝗿𝘆')">
+                    <img src="images/24.jpg" 
+                         class="img-fluid pulse-glow" 
+                         width="400" 
+                         style="border-radius: 0px;"
+                         alt="𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗱𝗮𝘁𝗮 𝗯𝗮𝗰𝗸𝘂𝗽 𝗮𝗻𝗱 𝗿𝗲𝗰𝗼𝘃𝗲𝗿𝘆">
+                    <p class="mt-3" style="color: #00f2ff; font-family: 'Orbitron'; font-size: 1.1rem;">[INTRODUCTION TO DATA BACKUP AND RECOVERY]</p>
+                </div>
 
       <details>
-  <summary style="cursor: pointer; color: gray; font-size: 0.9rem; margin-bottom: 5px;">
-    Click to view details
-  </summary>
-  <div style="border-left: 2px solid #ccc; padding-left: 10px;">
-    <a href="" style="color: gray; text-decoration: none; font-size: 0.8rem; display: block;">
+  <summary>ACCESS_DATABASE_DETAILS</summary>
+    
+    <div style="color: #aaa; font-size: 0.85rem; text-align: left;">
+
+    
    This image is an educational infographic titled "Introduction to Data Backup & Recovery." It is divided into two main sections to explain how to protect digital information:
    <br>
     1. Data Backup<br>
@@ -4606,11 +4573,15 @@ Best Budget Option: RTX 4060 / Arc B570
 
     <br><br>
 
-    <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+   <button id="scrollTopBtn" title="Go to top">
+  <span class="btn-line"></span>
+  <span class="btn-text">▲</span>
+  <div class="glitch-layer"></div>
+</button>
 
     <!-- Footer -->
 
-<nav class="navbar navbar-expand-sm navbar-dark" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; background-color: rgba(0, 0, 0, 0.7);">
+<nav class="navbar navbar-expand-sm navbar-dark custom-cyber-nav" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; background-color: rgba(0, 0, 0, 0.7);">
      <div class="container-fluid justify-content-center">
          <span class="navbar-text text-center">
              &copy; 2026 RKG's Digital Weave. All rights reserved.
